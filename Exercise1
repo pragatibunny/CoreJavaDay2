@@ -1,0 +1,37 @@
+/**
+ * Find the smallest number among three numbers. 
+ */
+package com.hcl;
+
+import java.util.Scanner;
+
+/**
+ * @author Pragati Sharma
+ *
+ */
+public class Exercise1 {
+
+	public static int smallestNumber(int input1, int input2, int input3) {
+		if (input1 <= input2 && input1 <= input2) {
+			return input1;
+		} else if (input2 <= input1 && input2 <= input3) {
+			return input2;
+		} else {
+			return input3;
+		}
+
+	}
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Input the first number: ");
+		int input1 = scanner.nextInt();
+		System.out.print("Input the Second number: ");
+		int input2 = scanner.nextInt();
+		System.out.print("Input the third number: ");
+		int input3 = scanner.nextInt();
+		System.out.print("The smallest value is " + smallestNumber(input1, input2, input3) + "\n");
+
+	}
+
+}
